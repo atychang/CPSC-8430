@@ -191,3 +191,4 @@ poetry.toml
 data/
 .vscode/
 .envrc
+.DS_Store
