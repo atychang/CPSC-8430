@@ -1,5 +1,11 @@
 # Homework 1
 
+## Usage
+
+```shell
+jupyter-lab
+```
+
 ## 1-1 Deep Vs Shallow
 
 ### [Simulate a Function](1-1_1.ipynb)

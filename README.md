@@ -6,20 +6,13 @@
 
 - Python 3.6+
 
-### Installation
+### Setup Environment
 
 ```shell
 pip install -r requirements.txt
 ```
 
-## Usage
-
-Once installed, launch JupyterLab with:
-
-```shell
-jupyter-lab
-```
-
 ## Homeworks
 
 - [Homework 1](hw1/README.md)
+- [Homework 2](hw2/hw2_1/README.md)
