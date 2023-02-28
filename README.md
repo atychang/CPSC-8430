@@ -22,4 +22,4 @@ jupyter-lab
 
 ## Homeworks
 
-- [Homework 1](HW1/README.md)
+- [Homework 1](hw1/README.md)
