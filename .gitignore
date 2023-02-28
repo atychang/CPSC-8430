@@ -189,3 +189,5 @@ poetry.toml
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode
 
 data/
+.vscode/
+.envrc
