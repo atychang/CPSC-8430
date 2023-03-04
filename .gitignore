@@ -196,3 +196,5 @@ hw2/hw2_1/data/*
 .vscode/
 .envrc
 .DS_Store
+*.txt
+!hw2/hw2_1/data/s2vt_model.pkl
