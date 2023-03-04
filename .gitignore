@@ -188,7 +188,11 @@ poetry.toml
 
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode
 
-data/
+hw1/data/
+
+hw2/hw2_1/data/*
+!hw2/hw2_1/data/training_label.json
+!hw2/hw2_1/data/testing_label.json
 .vscode/
 .envrc
 .DS_Store
