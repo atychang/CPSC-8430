@@ -58,7 +58,11 @@ def main(args):
         words = []
         for tensor in cap_out:
             word = tensor.item()
-            if word not in [PAD, BOS, EOS, UNK]:
+            if word in [PAD, BOS, EOS]:
+                continue
+            elif word == UNK:
+                words.append("<UNK>")
+            else:
                 words.append(index2word[word])
             caption = " ".join(words)
 
