@@ -4,6 +4,10 @@ from pathlib import Path
 
 import torch
 from data import (
+    BOS,
+    EOS,
+    PAD,
+    UNK,
     MsvdTestingDataset,
     build_vocab,
     build_word_index_map,
@@ -11,7 +15,6 @@ from data import (
 )
 from torch.utils.data import DataLoader
 from utils import dir_path, is_text_file
-from data import PAD, BOS, EOS, UNK
 
 DATA_DIR = Path(__file__).parent / "data"
 DATASET_DIR = DATA_DIR / "MLDS_hw2_1_data"
