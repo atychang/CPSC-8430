@@ -148,6 +148,7 @@ def main():
         print(f"\nEpoch {epoch + 1}\n-------------------------------")
         start_time = time.time()
         train(model, epoch + 1, training_data_loader, loss_func)
+        torch.save(model, DATA_DIR / "s2vt_model.pkl")
         print("--- %s seconds ---" % (time.time() - start_time))
 
     print("\nTraining complete.\n")
