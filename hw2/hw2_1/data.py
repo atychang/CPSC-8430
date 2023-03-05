@@ -1,9 +1,7 @@
 import json
-import random
 import re
 
 import numpy as np
-import torch
 from torch.utils.data import Dataset
 
 PAD: int = 0
@@ -84,18 +82,6 @@ def get_annotated_captions(file_path, word2index):
             annotated_captions.append((video["id"], caption))
 
     return annotated_captions
-
-
-def get_training_data(
-    video_feats, annotated_captions, word2index, n_lstm_steps, batch_size
-):
-    vids = random.choices(list(video_feats.keys()), k=batch_size)
-    batch_feats = np.array([video_feats[vid] for vid in vids])
-    feats_idx = np.linspace(0, 79, n_lstm_steps).astype(int)
-    batch_feats = batch_feats[:, feats_idx, :]
-    captions = [random.choices(annotated_captions[vid], k=1)[0] for vid in vids]
-    captions, cap_mask = convert_caption(captions, word2index, n_lstm_steps)
-    return batch_feats, captions, cap_mask
 
 
 class MsvdTrainingDataset(Dataset):
