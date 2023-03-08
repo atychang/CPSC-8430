@@ -56,7 +56,6 @@ class S2VT(nn.Module):
             cap_out, state_cap = self.lstm2(cap_input)
 
             bos_id = self.word2index["<BOS>"] * torch.ones(batch_size, dtype=torch.long)
-            bos_id = bos_id
             cap_input = self.embedding(bos_id)
             cap_input = torch.cat((cap_input, vid_out[:, self.n_step, :]), 1)
             cap_input = cap_input.view(batch_size, 1, 2 * self.hidden)
