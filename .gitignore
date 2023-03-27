@@ -198,3 +198,6 @@ hw2/hw2_1/data/*
 .DS_Store
 *.txt
 !hw2/hw2_1/data/s2vt_model.pkl
+
+hw3/spoken-trained/
+hw3/spoken-trained.zip
