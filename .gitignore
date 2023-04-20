@@ -201,3 +201,8 @@ hw2/hw2_1/data/*
 
 hw3/spoken-trained/
 hw3/spoken-trained.zip
+
+hw4/data/
+hw4/models/
+hw4/generated_images/
+
